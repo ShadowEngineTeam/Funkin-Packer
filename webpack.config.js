@@ -86,7 +86,7 @@ export default (env, argv) => {
       if (desktopPlatforms.includes(haxePlatform)) {
         hxmlLines.push("--library hxwebview");
         hxmlLines.push("-D desktop");
-        hxmlLines.push("-D no-console");
+        hxmlLines.push("-D no_console");
       } else if (mobilePlatforms.includes(haxePlatform)) {
         hxmlLines.push("--library extension-webview");
         hxmlLines.push("-D mobile");
